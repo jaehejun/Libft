@@ -6,7 +6,20 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 20:37:43 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/15 20:58:12 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/17 20:52:47 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	bzero(void *s, size_t n)
+{
+	char *arr;
+	size_t i;
+
+	arr = s;
+	while (i < n)
+	{
+
+	}
+}
