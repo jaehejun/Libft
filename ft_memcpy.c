@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/13 18:32:36 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/18 21:22:14 by jaehejun         ###   ########.fr       */
+/*   Created: 2023/03/18 19:44:47 by jaehejun          #+#    #+#             */
+/*   Updated: 2023/03/18 21:27:31 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memset(void *b, int c, size_t n)
+void	*memcpy(void *s1, const void *s2, size_t n)
 {
-	unsigned char	*dest;
+	char *arr;
 
-	dest = (unsigned char *)b;
-	while (n-- > 0)
-		*dest++ = (unsigned char)c;
-	return (b);
-}
+	// casting 
+	char *temp_s1;
+	char *temp_s2;
 
-#include<string.h> // #include<memory.h> 도 괜찮습니다.
-#include<stdio.h>
-int main(void)
-{
-    char arr1[] = "blockdmask blog";
-    memset(arr1, 97, 5 * sizeof(char));
-    printf("%s\n", arr1);
-    return 0;
+	temp_s1 = s1;
+	temp_s2 = s2;
+	while (s1 != s2 && n > 0)
+	{
+		*temp_s1++ = *temp_s2++;
+		*s2++;
+		n--;
+	}
+	return (s1);
 }
