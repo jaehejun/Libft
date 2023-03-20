@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:30:23 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/15 20:58:15 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/20 17:32:36 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '/0')
+	while (*s)
 		i++;
 	return (i);
 }

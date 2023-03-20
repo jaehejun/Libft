@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/18 19:44:37 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/18 21:13:18 by jaehejun         ###   ########.fr       */
+/*   Created: 2023/03/20 22:04:06 by jaehejun          #+#    #+#             */
+/*   Updated: 2023/03/20 22:24:15 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memcpy(void *s1, const void *s2, size_t n)
+size_t	strlcpy(char *dst, const char *src, size_t size)
 {
-	char *arr;
+	char	*srcs;
 
-	// casting 
-	char *temp_s1;
-	char *temp_s2;
-
-	temp_s1 = s1;
-	temp_s2 = s2;
-	while (s1 != s2 && n > 0)
-	{
-		*temp_s1++ = *temp_s2++;
-		n--;
-	}
-	return (s1);
+	srcs = src;
+	while (*dst && size-- > 1)
+		*dst++ = *srcs++;
+	*dst = 0;
+	return (ft_strlen(src));
 }
