@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:26:51 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/20 22:39:23 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/21 16:17:10 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,13 @@ int	strncmp(const char *s1, const char *s2, size_t n)
 {
 	while (*s1 && *s2 && n-- > 0)
 	{
+		if (*s1 == *s2)
+		{
 		s1++;
 		s2++;
+		}
+		else
+			break ;
 	}
 	return (*s1 - *s2);
 }
