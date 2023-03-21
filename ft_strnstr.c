@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 21:44:53 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/18 21:56:37 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/21 20:25:16 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@ static char	*check_needle(const char *haystack, const char *needle, size_t len)
 {
 	while (len-- > 0)
 	{
+		
 	}
 	return (0);
 }
 
-char	*strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_štrnstr(const char *haystack, const char *needle, size_t len)
 {
 	if (needle == 0)
 		return (haystack);

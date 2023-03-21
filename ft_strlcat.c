@@ -6,13 +6,13 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:08:59 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/20 22:23:59 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/21 20:24:40 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	char	*srcs;
 	size_t	dst_len;

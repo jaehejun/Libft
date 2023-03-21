@@ -6,13 +6,13 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:04:06 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/20 22:24:15 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/21 20:24:47 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	char	*srcs;
 
