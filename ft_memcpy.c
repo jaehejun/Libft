@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 19:44:47 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/21 21:54:36 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/22 21:26:29 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ void	*ft_memcpy(void *s1, const void *s2, size_t n)
 	return (s1);
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	main(void)
-{
-	char	a[] = "abcde";
-	char	b[] = "01234";
+//int	main(void)
+//{
+//	char	a[] = "abcde";
+//	char	b[] = "01234";
 
-	ft_memcpy(a, b, 8);
-	printf("%s\n", a);
-}
+//	ft_memcpy(a, b, 8);
+//	printf("%s\n", a);
+//}

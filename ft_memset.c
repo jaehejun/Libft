@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:32:36 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/20 17:32:37 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/22 21:27:43 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memset(void *b, int c, size_t n)
 
 	dest = (unsigned char *)b;
 	while (n-- > 0)
-		*dest++ = (unsigned char)c;
+		*dest++ = c;
 	return (b);
 }
 
@@ -26,8 +26,10 @@ void	*ft_memset(void *b, int c, size_t n)
 //#include<stdio.h>
 //int main(void)
 //{
-//    char arr1[] = "blockdmask blog";
-//    memset(arr1, 97, 5 * sizeof(char));
-//    printf("%s\n", arr1);
+//    char arr[] = "blockdmask blog";
+//    memset(arr, 48, 127 * sizeof(char));
+//    printf("%s\n", arr);
+//	ft_memset(arr, 48, 127 * sizeof(char));
+//	printf("%s\n", arr);
 //    return 0;
 //}
