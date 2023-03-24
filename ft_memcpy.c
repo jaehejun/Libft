@@ -26,13 +26,13 @@ void	*ft_memcpy(void *s1, const void *s2, size_t n)
 	return (s1);
 }
 
-//#include <stdio.h>
+#include <stdio.h>
 
-//int	main(void)
-//{
-//	char	a[] = "abcde";
-//	char	b[] = "01234";
+int	main(void)
+{
+	char	a[] = "abcde";
+	char	b[] = "01234";
 
-//	ft_memcpy(a, b, 8);
-//	printf("%s\n", a);
-//}
+	ft_memcpy(a, b, 8);
+	printf("%s\n", a);
+}
