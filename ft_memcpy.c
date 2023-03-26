@@ -6,24 +6,24 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 19:44:47 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/26 16:46:17 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/26 21:18:46 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *s1, const void *s2, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char	*dest;
-	char	*src;
+	char	*s1;
+	char	*s2;
 
-	dest = (char *)s1;
-	src = (char *)s2;
-	while (dest != src && n-- > 0)
+	s1 = (char *)dst;
+	s2 = (char *)src;
+	while (s1 != s2 && n-- > 0)
 	{
-		*dest++ = *src++;
+		*s1++ = *s2++;
 	}
-	return (s1);
+	return (dst);
 }
 
 	//#include <stdio.h>

@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:32:36 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/26 15:56:16 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/26 22:22:09 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-//#include<string.h> // #include<memory.h> 도 괜찮습니다.
+//#include<string.h>
 //#include<stdio.h>
 //int main(void)
 //{
 //    char arr[] = "blockdmask blog";
-//    memset(arr, 48, 127 * sizeof(char));
+//    memset(arr, 48, 4 * sizeof(char));
 //    printf("%s\n", arr);
-//	ft_memset(arr, 48, 127 * sizeof(char));
+//	ft_memset(arr, 48, 4 * sizeof(char));
 //	printf("%s\n", arr);
 //    return 0;
 //}
