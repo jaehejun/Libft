@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:26:51 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/21 20:24:56 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/26 15:27:51 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (*s1 && *s2 && n-- > 0)
+	if (n == 0)
+		return (0);
+	while (*s1 && *s2 && --n > 0)
 	{
 		if (*s1 == *s2)
 		{
@@ -22,7 +24,21 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		s2++;
 		}
 		else
-			break ;
+			break;
 	}
 	return (*s1 - *s2);
 }
+
+//#include <stdio.h>
+
+//int	main(void)
+//{
+//	char a[2];
+//	char b[0];
+
+//	a[0] = 200;
+//	a[1] = 0;
+//	b[0] = 0;
+//	printf("%d\n", ft_strncmp(a, b, 1));
+//	return (0);
+//}
