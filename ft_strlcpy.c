@@ -6,29 +6,26 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:04:06 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/26 23:47:37 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/27 20:15:00 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	char	*s2;
-	int		flag;
+	int		check_space;
+	int		src_len;
 
-	if (dstsize == 0)
-		return (strlen(src));
-	flag = 0;
-	if (dstsize > 0)
-		flag = 1;
-	s2 = (char	*)src;
+	src_len = ft_strlen(src);
+	check_space = 0;
+	if (dstsize != 0)
+		check_space = 1;
 	while (*src && dstsize-- > 1)
-		*dst++ = *s2++;
-	if (flag == 1)
+		*dst++ = *src++;
+	if (check_space == 1)
 		*dst = 0;
-	return (strlen(src));
+	return (src_len);
 }
 
 //#include <stdio.h>
@@ -36,18 +33,22 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 //int	main(void)
 //{
-//	char a[100] = "abcde";
-//	char b[100] = "01234";
-	
-//	printf("%zu\n", ft_strlcpy(a, b, 0));
-//	printf("%s\n", a);
-//	printf("%lu\n", strlcpy(a, b, 0));
-//	printf("%s\n", a);
-	
-//	printf("%zu\n", ft_strlcpy(a, b, 5));
-//	printf("%s\n", a);
-//	printf("%lu\n", strlcpy(a, b, 5));
-//	printf("%s\n", a);
+//	char a[] = "aaaaa";
+//	char b[] = "bbb";
+//	ft_strlcpy(a, b, 3);
+//	ft_strlcpy(a, b, 10);
+//	ft_strlcpy(a, b, 0);
+	//printf("%zu\n", ft_strlcpy(a, b, 3));
+	//printf("%s\n", a);
+	//printf("%zu\n", ft_strlcpy(a, b, 0));
+	//printf("%s\n", a);
+	//printf("%lu\n", strlcpy(a, b, 0));
+	//printf("%s\n", a);
+
+	//printf("%zu\n", ft_strlcpy(a, b, 5));
+	//printf("%s\n", a);s
+	//printf("%lu\n", strlcpy(a, b, 5));
+	//printf("%s\n", a);
 
 //	return (0);
 //}

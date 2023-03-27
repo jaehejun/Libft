@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:26:51 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/26 15:27:51 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/27 20:15:21 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		s2++;
 		}
 		else
-			break;
+			break ;
 	}
 	return (*s1 - *s2);
 }
