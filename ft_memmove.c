@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 19:44:55 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/27 21:04:18 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/28 15:18:51 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	s2 = (char *)src;
 	if (s1 < s2)
 	{
-		while (*s1 && *s2 && len-- > 0)
+		while (len-- > 0)
 			*s1++ = *s2++;
 	}
 	else

@@ -1,44 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/20 22:26:51 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/28 15:47:38 by jaehejun         ###   ########.fr       */
+/*   Created: 2023/03/28 18:33:50 by jaehejun          #+#    #+#             */
+/*   Updated: 2023/03/28 22:37:22 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	if (n == 0)
-		return (0);
-	while (*s1 && *s2 && --n > 0)
+	int	i;
+
+	i = ft_strlen(s);
+	while (*(s + i) != (char)c)
 	{
-		if (*s1 == *s2)
-		{
-		s1++;
-		s2++;
-		}
-		else
-			break ;
+		if (i == 0)
+			return (NULL);
+		i--;
 	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
+	return ((char *)s + i);
 }
-
-//#include <stdio.h>
-
-//int	main(void)
-//{
-//	char a[2];
-//	char b[0];
-
-//	a[0] = 200;
-//	a[1] = 0;
-//	b[0] = 0;
-//	printf("%d\n", ft_strncmp(a, b, 1));
-//	return (0);
-//}

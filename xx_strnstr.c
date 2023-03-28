@@ -1,44 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/20 22:26:51 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/28 15:47:38 by jaehejun         ###   ########.fr       */
+/*   Created: 2023/03/18 21:44:53 by jaehejun          #+#    #+#             */
+/*   Updated: 2023/03/26 14:56:01 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
-{
-	if (n == 0)
-		return (0);
-	while (*s1 && *s2 && --n > 0)
-	{
-		if (*s1 == *s2)
-		{
-		s1++;
-		s2++;
-		}
-		else
-			break ;
-	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
-}
-
-//#include <stdio.h>
-
-//int	main(void)
+static char	*check_needle(const char *haystack, const char *needle, size_t len);
 //{
-//	char a[2];
-//	char b[0];
-
-//	a[0] = 200;
-//	a[1] = 0;
-//	b[0] = 0;
-//	printf("%d\n", ft_strncmp(a, b, 1));
+//	while (len-- > 0)
+//	{
+//	}
 //	return (0);
+//}
+//char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+//{
+//	if (needle == 0)
+//		return (haystack);
+//	return (check_needle(haystack, needle, len));
 //}
