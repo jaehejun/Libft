@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:26:51 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/28 15:47:38 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/03/30 21:17:21 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		if (*s1 == *s2)
 		{
-		s1++;
-		s2++;
+			s1++;
+			s2++;
 		}
 		else
 			break ;
@@ -33,12 +33,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 //int	main(void)
 //{
-//	char a[2];
-//	char b[0];
+//	char a[] = "aaa";
+//	char b[] = "aa";
 
-//	a[0] = 200;
-//	a[1] = 0;
-//	b[0] = 0;
-//	printf("%d\n", ft_strncmp(a, b, 1));
+//	printf("%d\n", ft_strncmp(a, b, 0));
 //	return (0);
 //}
