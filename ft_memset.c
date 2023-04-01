@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:32:36 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/30 21:48:54 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/01 20:24:43 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	*ft_memset(void *b, int c, size_t len)
 
 //#include<string.h>
 //#include<stdio.h>
+
 //int main(void)
 //{
 //    char arr[] = "blockdmask blog";

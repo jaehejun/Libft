@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 22:42:09 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/31 16:52:02 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/01 20:27:16 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*str;
 
 	str = (void *)malloc(sizeof(void) * (count * size));
-	if (!str)
-		return (NULL);
+	if (str == 0)
+		return (0);
 	ft_memset(str, 0, count * size);
 	return (str);
 }
