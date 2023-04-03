@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 18:33:50 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/28 22:37:22 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/03 21:13:57 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	size_t	len;
 
-	i = ft_strlen(s);
-	while (*(s + i) != (char)c)
+	len = ft_strlen(s) + 1;
+	s += len - 1;
+	while (len-- > 0)
 	{
-		if (i == 0)
-			return (NULL);
-		i--;
+		if (*s == (char)c)
+			return ((char *)s);
+		s--;
 	}
-	return ((char *)s + i);
+	return (NULL);
 }
