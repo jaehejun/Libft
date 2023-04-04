@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 22:08:59 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/28 15:20:08 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/04 12:05:31 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (src_len + dstsize);
 	while (*dst)
 		dst++;
-	while (*src && (dstsize-- - dst_len) > 1)
+	while (*src && (dstsize - dst_len) > 1)
+	{
 		*dst++ = *src++;
+		dstsize--;
+	}
 	if (check_space == 1)
 		*dst = 0;
 	return (dst_len + src_len);
