@@ -1,43 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/28 22:42:02 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/06 16:07:15 by jaehejun         ###   ########.fr       */
+/*   Created: 2023/04/06 21:52:51 by jaehejun          #+#    #+#             */
+/*   Updated: 2023/04/06 23:06:57 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_space(char c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if ((9 <= c && c <= 13) || c == 32)
-		return (1);
-	return (0);
-}
+	char			*strmapi;
+	unsigned int	len;
+	unsigned int	index;
 
-int	ft_atoi(const char *str)
-{
-	int	sign;
-	int	number;
-
-	sign = 1;
-	number = 0;
-	while (is_space(*str) == 1)
-		str++;
-	if (*str == '-' || *str == '+')
+	len = ft_strlen(s);
+	index = 0;
+	strmapi = (char *)malloc(sizeof(char) * len + 1);
+	if (strmapi == 0)
+		return (NULL);
+	while (s[index] != '\0')
 	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
+		strmapi[index] = f(index, s[index]);
+		index++;
 	}
-	while ('0' <= *str && *str <= '9')
-	{
-		number = number * 10 + (*str - '0');
-		str++;
-	}
-	return (number * sign);
+	strmapi[index] = '\0';
+	return (strmapi);
 }
