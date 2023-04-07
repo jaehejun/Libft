@@ -6,21 +6,11 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 20:37:43 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/27 20:13:44 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/07 11:23:32 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset(void *b, int c, size_t len)
-{
-	unsigned char	*dest;
-
-	dest = (unsigned char *)b;
-	while (len-- > 0)
-		*dest++ = c;
-	return (b);
-}
 
 void	ft_bzero(void *s, size_t n)
 {
