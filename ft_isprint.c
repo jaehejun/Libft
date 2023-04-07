@@ -6,9 +6,11 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:25:44 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/15 20:58:14 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/07 22:59:58 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

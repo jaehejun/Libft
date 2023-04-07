@@ -6,12 +6,11 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 10:39:30 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/07 10:45:18 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/07 23:01:08 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {

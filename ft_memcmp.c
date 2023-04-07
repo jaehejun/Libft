@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 22:41:04 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/31 20:15:29 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/07 23:43:28 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (*c1 - *c2);
 }
-
-//#include <stdio.h>
-//int	main(void)
-//{
-//	char	a[] = "s";
-//	char	b[] = "sCpy";
-//	char	c[] = "abcdefghij";
-//	char	d[]	= "abcdefgxyz";
-//	char	*e = 0;
-//	char	*f = 0;
-//	printf("%d\n", ft_memcmp(e, f, 5));
-//	printf("%d\n", ft_memcmp(c, d, 0));
-//	return (0);
-//}

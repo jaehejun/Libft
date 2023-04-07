@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 22:41:55 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/03/31 19:13:04 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/07 23:44:22 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-//#include <stdio.h>
-
-//int	main(void)
-//{
-//	char haystack[30] = "aaabcabcd";
-//	printf("%s\n", ft_strnstr(haystack, "abcd", 9));
-//	return (0);
-//	}
