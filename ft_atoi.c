@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 22:42:02 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/07 22:58:05 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/08 11:06:03 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static int	is_space(char c)
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
-	int	number;
+	int		sign;
+	long	number;
 
 	sign = 1;
 	number = 0;

@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 18:50:27 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/04 21:05:06 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/08 12:07:14 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,20 +35,25 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 	//trimmed[i] = '\0';
 
-//int	main(void)
-//{
+#include <stdio.h>
+int	main(void)
+{
 	//char	a[] = "lorem ipsum dolor sit amet";
 	//char	b[] = "te";
 	//char	c[] = "tel";
-	//char	s1[] = "          ";
+	char	s1[] = "          ";
 	//char	v[] = "";
 	//char	s[] = "   xxx   xxx";
 	//char	ss[] = " x";
 //	//ft_strtrim(a, b);
 //	//ft_strtrim(a, c);
-	//ft_strtrim(s1, " ");
-	//ft_strtrim("", "");
+	printf("%s\n", ft_strtrim(s1, " "));
+	printf("%s\n", ft_strtrim("", ""));
+	printf("%s\n", ft_strtrim("aaaaaaaaaa", "a"));
+	if (printf("%s\n", ft_strtrim("", "")) == 1)
+		printf("correct");
+
 //	//ft_strtrim(a, v);
 	//ft_strtrim(s, ss);
 	//return (0);
-//}
+}

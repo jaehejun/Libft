@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/01 13:54:03 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/03 15:48:07 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/08 11:54:20 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-
-//int	main(void)
-//{
-//	char	a[] = "lorem ipsum dolor sit amet";
-//	ft_substr(a, 1, 10);
-//}
