@@ -6,7 +6,7 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 15:51:02 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/04 12:16:22 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/08 14:36:23 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	join[i] = '\0';
 	return (join);
 }
-
-//int	main(void)
-//{
-//	char	a[] = "lorem ipsum";
-//	char	b[] = "dolor sit amet";
-//	printf("%s\n", ft_strjoin(a, b));
-//	return (0);
-//}

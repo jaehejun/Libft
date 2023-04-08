@@ -6,13 +6,13 @@
 /*   By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 13:41:48 by jaehejun          #+#    #+#             */
-/*   Updated: 2023/04/07 21:42:04 by jaehejun         ###   ########.fr       */
+/*   Updated: 2023/04/08 15:36:30 by jaehejun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	len_number(long n)
+static int	len_number(long n)
 {
 	int	len;
 
