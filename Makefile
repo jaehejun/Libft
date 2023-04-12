@@ -6,7 +6,7 @@
 #    By: jaehejun <jaehejun@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/18 19:38:24 by jaehejun          #+#    #+#              #
-#    Updated: 2023/04/11 15:10:57 by jaehejun         ###   ########.fr        #
+#    Updated: 2023/04/12 19:01:37 by jaehejun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,11 +29,9 @@ OBJS	= $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar -cr $(NAME) $(OBJS)		// ar -r 만  있어도 아카이브 생성된다
-
-.o: .c
-	$(CC) $(CFLAGS) -o $@ -c $^
-
+	ar -cr $(NAME) $(OBJS)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	rm -f $(OBJS)
 
